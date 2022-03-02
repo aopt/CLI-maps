@@ -1,7 +1,7 @@
 ::---------------------------------------------------------------------------
 ::
 ::   Mike Bostock
-::   Command-Line Cartography, Part 3
+::   Command-Line Cartography, Part 4
 ::   A tour of d3-geo’s new command-line interface.
 :: 
 ::   https://medium.com/@mbostock/command-line-cartography-part-3-1158e4c55a1e
