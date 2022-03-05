@@ -46,5 +46,5 @@ call topo2geo tracts=- < ca-topo.json |^
 ndjson-map -r d3 "z = d3.scaleThreshold().domain([1, 10, 50, 200, 500, 1000, 2000, 4000]).range(d3.schemeOrRd[9]), d.features.forEach(f => f.properties.fill = z(f.properties.density)), d" |^
 ndjson-split "d.features" > geo.json
 call topo2geo counties=- < ca-topo.json | ndjson-map "d.properties = {""stroke"": ""#000"", ""stroke-opacity"": 0.3}, d" >> geo.json
-call geo2svg -n --stroke none -p 1 -w 960 -h 960 < geo1.json > ca.svg
+call geo2svg -n --stroke none -p 1 -w 960 -h 960 < geo.json > ca.svg
 start ca.svg
