@@ -37,5 +37,4 @@ call geoproject "d3.geoConicEqualArea().parallels([34, 40.5]).rotate([120, 0]).f
 
 :: create svg
 call geo2svg -w 960 -h 960 < ca-albers.json > ca-albers.svg
-
-
+start ca-albers.svg
